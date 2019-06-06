@@ -26,6 +26,7 @@ class IdolAdapter (var idols:List<Idol>, var clickListener: (Idol) -> Unit): Rec
 
         fun bind(idol: Idol, clickListener: (Idol) -> Unit) = with(itemView) {
             this.tv_nombre.text= idol.nombre
+            this.setOnClickListener { clickListener(idol)}
         }
 
     }
