@@ -18,6 +18,6 @@ interface IdolDAO {
     @Query("SELECT * FROM idols WHERE id=:idIdol")
     fun getIdol(idIdol:Int): LiveData<Idol>
 
-    @Query("DELETE * FROM idols")
+    @Query("DELETE FROM idols")
     fun deleteAllIdols()
 }
