@@ -26,6 +26,12 @@
         android:id="@+id/ed_estatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="EStatura del idol"/>
+        android:hint="Estatura del idol"/>
+
+    <Button
+        android:id="@+id/bt_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar idol"/>
 
 </LinearLayout>
