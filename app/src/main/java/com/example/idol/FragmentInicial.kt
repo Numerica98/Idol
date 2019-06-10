@@ -36,9 +36,10 @@ class FragmentInicial: Fragment() {
         //Manjeo del RecyclerView
         var linearLayoutManager = LinearLayoutManager(this.context)
         idolsAdapter = IdolAdapter(idols, {idol:Idol->listenerTool?.mostrarIdol(idol)})
-        view.rv_lista_idols.adapter = idolsAdapter as IdolAdapter
+        //view.rv_lista_idols.adapter = idolsAdapter as IdolAdapter
 
         view.rv_lista_idols.apply {
+            adapter= idolsAdapter
             setHasFixedSize(true)
             layoutManager = linearLayoutManager
         }
